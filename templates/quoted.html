@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <div class="container-fluid">
+    	{% for term in extracted_terms %}
+    		<li> term: {{ term }} </li>
+    	{% endfor %}
+    </div>
+{% endblock %}
